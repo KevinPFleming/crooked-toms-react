@@ -1,10 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component, Switch, Route } from 'react';
 import  Header  from './HeaderComponent';
+
 
 class Main extends Component {
     render(){
         return(
-            <Header />
+            <React.Fragment>
+                <Header />
+            </React.Fragment>
         )
     }
 }
