@@ -6,8 +6,14 @@ h1, h2, h3, .card-body>.card-title {
   font-family: "Lobster", cursive;
 }
 
-.header-title {
+.jumbo-title {
   text-align: center;
+}
+
+.header-title {
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-title {
@@ -38,24 +44,30 @@ h2 {
 .jumbotron {
   margin: 0;
   padding: 30px;
-  background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+  background-image: linear-gradient(to right, #0a0a0a, #3046C5, #0a0a0a);
   color: white;
 }
 
 .jumbotron h2 {
-  color: #CEC8FF;
+  color: #e6dbe6;
+}
+
+.main-crest {
+  transform: rotate(45deg);
 }
 
 .nav-center {
   align-items: center;
 }
 
-.Nav {
-text-align: center;
+.NavItem {
+  text-align: center;
+  position: relative;
+  display: inline-block;
 }
 
 .navbar-dark {
-  background-color: #901CAD;
+  background-color: #070707;
 }
 
 .page-enter {

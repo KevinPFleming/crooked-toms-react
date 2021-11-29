@@ -41,48 +41,58 @@ class Header extends Component {
 
                     <div className="container-fluid jumbotron">
                         <div className="row">
-                            <div className="col header-title mx-auto">
-                            <img src="/img/ct-crest.png" href="/" height="100" width="100" alt="Skwadron Logo" />
+                            <div className="col jumbo-title mx-auto">
+                            <img className="main-crest" src="/img/ct-crest.png" href="/" height="100" width="100" alt="Skwadron Logo" />
                                 <h1>Crooked Toms</h1>
                                 <h2>The Ultimate Skwadron!</h2>
                             </div>
                         </div>
                     </div>
 
+                    <div className="container-fluid header-title">
                     <Navbar dark sticky="top" expand="md">
-                        <div className="container">
                             <NavbarToggler onClick={this.toggleNav} />
                             <Collapse isOpen={this.state.isNavOpen} navbar>
                                 <Nav navbar>
                                     <NavItem>
                                         <NavLink className="nav-link" to="/home">
-                                            <i className="fa fa-home fa-lg" /> Home
+                                            <i className="fa fa-address-card fa-lg" />  Scruggy
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
                                         <NavLink className="nav-link" to="/directory">
-                                            <i className="fa fa-list fa-lg" /> Directory
+                                            <i className="fa fa-address-card fa-lg" />  Flaubert
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
                                         <NavLink className="nav-link" to="/aboutus">
-                                            <i className="fa fa-info fa-lg" /> About
+                                            <i className="fa fa-address-card fa-lg" />  Skalez
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
                                         <NavLink className="nav-link" to="/contactus">
-                                            <i className="fa fa-address-card fa-lg" /> Contact Us
+                                            <i className="fa fa-address-card fa-lg" />  Pantslee
+                                        </NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink className="nav-link" to="/contactus">
+                                            <i className="fa fa-address-card fa-lg" />  Stylez
+                                        </NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink className="nav-link" to="/contactus">
+                                            <i className="fa fa-address-card fa-lg" />  HK
                                         </NavLink>
                                     </NavItem>
                                 </Nav>
                                 <span className="ml-auto">
                                     <Button outline onClick={this.toggleModal}>
-                                        <i className= "fa fa-sign-in fa-lg" /> Login
+                                        <i className= "fa fa-sign-in fa-lg" />  LOGIN
                                     </Button>
                                 </span>
                             </Collapse>
-                        </div>
                     </Navbar>
+                </div>
 
 
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
